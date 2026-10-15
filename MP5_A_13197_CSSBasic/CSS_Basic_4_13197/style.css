@@ -1,0 +1,37 @@
+#ingfo {
+    text-align: right;
+    font-weight: italic;
+    font-size: 15px;
+}
+
+body {
+    font-style: italic;
+    color: #0000FF;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: green;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    background-color: #0000FF;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
