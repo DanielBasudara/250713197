@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Pendaftaran Seminar Ilmiah</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-header">
+            <h1>Formulir Registrasi Seminar Nasional</h1>
+            <p>Silakan lengkapi formulir di bawah ini untuk mendaftar pada acara seminar</p>
+        </div>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            
+            <div class="form-section">
+                <h3 class="section-title">Data Diri Peserta</h3>
+                <table class="form-table">
+                    <tr>
+                        <td class="label-col">
+                            <label for="namalengkap"><strong>Nama Lengkap &amp; Gelar</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" id="namalengkap" name="namalengkap" class="input-text" placeholder="Masukkan nama lengkap" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">
+                            <label for="npm"><strong>Nomor Pokok Mahasiswa (NPM)</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" id="npm" name="npm" class="input-text" placeholder="Contoh: 0821XXXXX" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">
+                            <strong>Gender / Jenis Kelamin</strong>
+                        </td>
+                        <td>
+                            <label class="radio-label">
+                                <input type="radio" id="laki" name="jk" value="Laki-laki" /> Laki-laki
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" id="perempuan" name="jk" value="Perempuan" /> Perempuan
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">
+                            <label for="prodi"><strong>Program Studi / Jurusan</strong></label>
+                        </td>
+                        <td>
+                            <select id="prodi" name="prodi" class="input-select">
+                                <option value="">-- Pilih Program Studi --</option>
+                                <option value="Informatika">Informatika</option>
+                                <option value="Sistem Informasi">Sistem Informasi</option>
+                                <option value="Teknik Industri">Teknik Industri</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-section">
+                <h3 class="section-title">Preferensi &amp; Pilihan Seminar</h3>
+                <table class="form-table">
+                    <tr>
+                        <td class="label-col">
+                            <strong>Kategori Jenis Tiket</strong>
+                        </td>
+                        <td>
+                            <label class="radio-label">
+                                <input type="radio" id="reguler" name="jenistiket" value="Reguler" /> Reguler
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" id="vip" name="jenistiket" value="VIP" /> VIP
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-col" style="vertical-align: top;">
+                            <strong>Topik Minat Seminar</strong>
+                        </td>
+                        <td>
+                            <div class="checkbox-wrapper">
+                                <label class="check-label"><input type="checkbox" id="topik1" name="topik[]" value="Web Development" /> Web Development</label><br />
+                                <label class="check-label"><input type="checkbox" id="topik2" name="topik[]" value="Data Science" /> Data Science</label><br />
+                                <label class="check-label"><input type="checkbox" id="topik3" name="topik[]" value="Artificial Intelligence" /> Artificial Intelligence</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-section">
+                <h3 class="section-title">Informasi Tambahan &amp; Berkas</h3>
+                <table class="form-table">
+                    <tr>
+                        <td class="label-col" style="vertical-align: top;">
+                            <label for="alasan"><strong>Motivasi Mengikuti Seminar</strong></label>
+                        </td>
+                        <td>
+                            <textarea id="alasan" name="alasan" rows="5" cols="30" class="input-textarea" placeholder="Tuliskan alasan atau harapan Anda mengikuti seminar ini..."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-col">
+                            <label for="bukti"><strong>Unggah Bukti Pembayaran</strong></label>
+                        </td>
+                        <td>
+                            <input type="file" id="bukti" name="bukti" class="input-file" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
